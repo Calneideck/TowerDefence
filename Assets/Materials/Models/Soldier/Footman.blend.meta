@@ -1,0 +1,176 @@
+fileFormatVersion: 2
+guid: 0e51f4015c215794cbeb90c6b8c49273
+timeCreated: 1429342254
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Arm_L
+    100002: Arm_R
+    100004: Armature
+    100006: Back
+    100008: Bicep_L
+    100010: Bicep_R
+    100012: Chest
+    100014: Collar_L
+    100016: Collar_R
+    100018: //RootNode
+    100020: Head
+    100022: Hip_L
+    100024: Hip_R
+    100026: Leg_L
+    100028: Leg_R
+    100030: Man
+    100032: Shoulder_L
+    100034: Shoulder_R
+    100036: Thigh_L
+    100038: Thigh_R
+    400000: Arm_L
+    400002: Arm_R
+    400004: Armature
+    400006: Back
+    400008: Bicep_L
+    400010: Bicep_R
+    400012: Chest
+    400014: Collar_L
+    400016: Collar_R
+    400018: //RootNode
+    400020: Head
+    400022: Hip_L
+    400024: Hip_R
+    400026: Leg_L
+    400028: Leg_R
+    400030: Man
+    400032: Shoulder_L
+    400034: Shoulder_R
+    400036: Thigh_L
+    400038: Thigh_R
+    4300000: Man
+    7400000: Default Take
+    7400002: Run
+    9500000: //RootNode
+    13700000: Man
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Run
+      takeName: Run
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Back
+        weight: 1
+      - path: Armature/Back/Chest
+        weight: 1
+      - path: Armature/Back/Chest/Collar_L
+        weight: 1
+      - path: Armature/Back/Chest/Collar_L/Shoulder_L
+        weight: 1
+      - path: Armature/Back/Chest/Collar_L/Shoulder_L/Bicep_L
+        weight: 1
+      - path: Armature/Back/Chest/Collar_L/Shoulder_L/Bicep_L/Arm_L
+        weight: 1
+      - path: Armature/Back/Chest/Collar_R
+        weight: 1
+      - path: Armature/Back/Chest/Collar_R/Shoulder_R
+        weight: 1
+      - path: Armature/Back/Chest/Collar_R/Shoulder_R/Bicep_R
+        weight: 1
+      - path: Armature/Back/Chest/Collar_R/Shoulder_R/Bicep_R/Arm_R
+        weight: 1
+      - path: Armature/Back/Chest/Head
+        weight: 1
+      - path: Armature/Back/Hip_L
+        weight: 1
+      - path: Armature/Back/Hip_L/Thigh_L
+        weight: 1
+      - path: Armature/Back/Hip_L/Thigh_L/Leg_L
+        weight: 1
+      - path: Armature/Back/Hip_R
+        weight: 1
+      - path: Armature/Back/Hip_R/Thigh_R
+        weight: 1
+      - path: Armature/Back/Hip_R/Thigh_R/Leg_R
+        weight: 1
+      - path: Man
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .100000001
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

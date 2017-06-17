@@ -1,0 +1,299 @@
+fileFormatVersion: 2
+guid: 609deec58df6c6042864b52d292ab4ef
+timeCreated: 1430620207
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Icosphere
+    100002: //RootNode
+    100004: NinjaMesh
+    100006: Arm1_L
+    100008: Arm1_R
+    100010: Arm2_L
+    100012: Arm2_R
+    100014: Armature
+    100016: Back
+    100018: Foot_L
+    100020: Foot_R
+    100022: Hand_L
+    100024: Hand_R
+    100026: Head
+    100028: Head2
+    100030: Hip_L
+    100032: Hip_R
+    100034: Leg1_L
+    100036: Leg1_R
+    100038: Leg2_L
+    100040: Leg2_R
+    100042: Scarf1
+    100044: Scarf1_001
+    100046: Scarf1_002
+    100048: Scarf1_003
+    100050: Scarf1_004
+    100052: Scarf1_005
+    100054: Scarf1_006
+    100056: Scarf1_007
+    100058: Scarf1_008
+    100060: Scarf1_009
+    100062: Scarf1_010
+    100064: Scarf1_011
+    100066: Scarf1_012
+    100068: Scarf1_013
+    100070: Scarf1_014
+    100072: Scarf1_015
+    100074: Scarf1_016
+    100076: Scarf1_017
+    100078: Scarf1_018
+    100080: Scarf1_019
+    100082: Scarf1_020
+    100084: Scarf1_021
+    100086: Scarf1_022
+    100088: Scarf1_023
+    100090: Scarf1_024
+    100092: Scarf1_025
+    100094: Shoulder_L
+    100096: Shoulder_R
+    100098: Waist
+    400000: Icosphere
+    400002: //RootNode
+    400004: NinjaMesh
+    400006: Arm1_L
+    400008: Arm1_R
+    400010: Arm2_L
+    400012: Arm2_R
+    400014: Armature
+    400016: Back
+    400018: Foot_L
+    400020: Foot_R
+    400022: Hand_L
+    400024: Hand_R
+    400026: Head
+    400028: Head2
+    400030: Hip_L
+    400032: Hip_R
+    400034: Leg1_L
+    400036: Leg1_R
+    400038: Leg2_L
+    400040: Leg2_R
+    400042: Scarf1
+    400044: Scarf1_001
+    400046: Scarf1_002
+    400048: Scarf1_003
+    400050: Scarf1_004
+    400052: Scarf1_005
+    400054: Scarf1_006
+    400056: Scarf1_007
+    400058: Scarf1_008
+    400060: Scarf1_009
+    400062: Scarf1_010
+    400064: Scarf1_011
+    400066: Scarf1_012
+    400068: Scarf1_013
+    400070: Scarf1_014
+    400072: Scarf1_015
+    400074: Scarf1_016
+    400076: Scarf1_017
+    400078: Scarf1_018
+    400080: Scarf1_019
+    400082: Scarf1_020
+    400084: Scarf1_021
+    400086: Scarf1_022
+    400088: Scarf1_023
+    400090: Scarf1_024
+    400092: Scarf1_025
+    400094: Shoulder_L
+    400096: Shoulder_R
+    400098: Waist
+    2300000: Icosphere
+    2300002: NinjaMesh
+    3300000: Icosphere
+    3300002: NinjaMesh
+    4300000: Icosphere
+    4300002: NinjaMesh
+    7400000: Default Take
+    7400002: Run
+    9500000: //RootNode
+    13700000: NinjaMesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Run
+      takeName: Run
+      firstFrame: -1
+      lastFrame: 11
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Back
+        weight: 1
+      - path: Armature/Back/Head
+        weight: 1
+      - path: Armature/Back/Head/Head2
+        weight: 1
+      - path: Armature/Back/Head/Scarf1
+        weight: 1
+      - path: Armature/Back/Head/Scarf1/Scarf1_001
+        weight: 1
+      - path: Armature/Back/Head/Scarf1/Scarf1_001/Scarf1_002
+        weight: 1
+      - path: Armature/Back/Head/Scarf1/Scarf1_001/Scarf1_002/Scarf1_003
+        weight: 1
+      - path: Armature/Back/Head/Scarf1/Scarf1_001/Scarf1_002/Scarf1_003/Scarf1_004
+        weight: 1
+      - path: Armature/Back/Head/Scarf1/Scarf1_001/Scarf1_002/Scarf1_003/Scarf1_004/Scarf1_005
+        weight: 1
+      - path: Armature/Back/Head/Scarf1/Scarf1_001/Scarf1_002/Scarf1_003/Scarf1_004/Scarf1_005/Scarf1_006
+        weight: 1
+      - path: Armature/Back/Head/Scarf1/Scarf1_001/Scarf1_002/Scarf1_003/Scarf1_004/Scarf1_005/Scarf1_006/Scarf1_007
+        weight: 1
+      - path: Armature/Back/Head/Scarf1/Scarf1_001/Scarf1_002/Scarf1_003/Scarf1_004/Scarf1_005/Scarf1_006/Scarf1_007/Scarf1_008
+        weight: 1
+      - path: Armature/Back/Head/Scarf1/Scarf1_001/Scarf1_002/Scarf1_003/Scarf1_004/Scarf1_005/Scarf1_006/Scarf1_007/Scarf1_008/Scarf1_009
+        weight: 1
+      - path: Armature/Back/Head/Scarf1/Scarf1_001/Scarf1_002/Scarf1_003/Scarf1_004/Scarf1_005/Scarf1_006/Scarf1_007/Scarf1_008/Scarf1_009/Scarf1_010
+        weight: 1
+      - path: Armature/Back/Head/Scarf1/Scarf1_001/Scarf1_002/Scarf1_003/Scarf1_004/Scarf1_005/Scarf1_006/Scarf1_007/Scarf1_008/Scarf1_009/Scarf1_010/Scarf1_011
+        weight: 1
+      - path: Armature/Back/Head/Scarf1/Scarf1_001/Scarf1_002/Scarf1_003/Scarf1_004/Scarf1_005/Scarf1_006/Scarf1_007/Scarf1_008/Scarf1_009/Scarf1_010/Scarf1_011/Scarf1_012
+        weight: 1
+      - path: Armature/Back/Head/Scarf1/Scarf1_001/Scarf1_002/Scarf1_003/Scarf1_004/Scarf1_005/Scarf1_006/Scarf1_007/Scarf1_008/Scarf1_009/Scarf1_010/Scarf1_011/Scarf1_012/Scarf1_013
+        weight: 1
+      - path: Armature/Back/Head/Scarf1/Scarf1_001/Scarf1_002/Scarf1_003/Scarf1_004/Scarf1_005/Scarf1_006/Scarf1_007/Scarf1_008/Scarf1_009/Scarf1_010/Scarf1_011/Scarf1_012/Scarf1_013/Scarf1_014
+        weight: 1
+      - path: Armature/Back/Head/Scarf1/Scarf1_001/Scarf1_002/Scarf1_003/Scarf1_004/Scarf1_005/Scarf1_006/Scarf1_007/Scarf1_008/Scarf1_009/Scarf1_010/Scarf1_011/Scarf1_012/Scarf1_013/Scarf1_014/Scarf1_015
+        weight: 1
+      - path: Armature/Back/Head/Scarf1/Scarf1_001/Scarf1_002/Scarf1_003/Scarf1_004/Scarf1_005/Scarf1_006/Scarf1_007/Scarf1_008/Scarf1_009/Scarf1_010/Scarf1_011/Scarf1_012/Scarf1_013/Scarf1_014/Scarf1_015/Scarf1_016
+        weight: 1
+      - path: Armature/Back/Head/Scarf1/Scarf1_001/Scarf1_002/Scarf1_003/Scarf1_004/Scarf1_005/Scarf1_006/Scarf1_007/Scarf1_008/Scarf1_009/Scarf1_010/Scarf1_011/Scarf1_012/Scarf1_013/Scarf1_014/Scarf1_015/Scarf1_016/Scarf1_017
+        weight: 1
+      - path: Armature/Back/Head/Scarf1/Scarf1_001/Scarf1_002/Scarf1_003/Scarf1_004/Scarf1_005/Scarf1_006/Scarf1_007/Scarf1_008/Scarf1_009/Scarf1_010/Scarf1_011/Scarf1_012/Scarf1_013/Scarf1_014/Scarf1_015/Scarf1_016/Scarf1_017/Scarf1_018
+        weight: 1
+      - path: Armature/Back/Head/Scarf1/Scarf1_001/Scarf1_002/Scarf1_003/Scarf1_004/Scarf1_005/Scarf1_006/Scarf1_007/Scarf1_008/Scarf1_009/Scarf1_010/Scarf1_011/Scarf1_012/Scarf1_013/Scarf1_014/Scarf1_015/Scarf1_016/Scarf1_017/Scarf1_018/Scarf1_019
+        weight: 1
+      - path: Armature/Back/Head/Scarf1/Scarf1_001/Scarf1_002/Scarf1_003/Scarf1_004/Scarf1_005/Scarf1_006/Scarf1_007/Scarf1_008/Scarf1_009/Scarf1_010/Scarf1_011/Scarf1_012/Scarf1_013/Scarf1_014/Scarf1_015/Scarf1_016/Scarf1_017/Scarf1_018/Scarf1_019/Scarf1_020
+        weight: 1
+      - path: Armature/Back/Head/Scarf1/Scarf1_001/Scarf1_002/Scarf1_003/Scarf1_004/Scarf1_005/Scarf1_006/Scarf1_007/Scarf1_008/Scarf1_009/Scarf1_010/Scarf1_011/Scarf1_012/Scarf1_013/Scarf1_014/Scarf1_015/Scarf1_016/Scarf1_017/Scarf1_018/Scarf1_019/Scarf1_020/Scarf1_021
+        weight: 1
+      - path: Armature/Back/Head/Scarf1/Scarf1_001/Scarf1_002/Scarf1_003/Scarf1_004/Scarf1_005/Scarf1_006/Scarf1_007/Scarf1_008/Scarf1_009/Scarf1_010/Scarf1_011/Scarf1_012/Scarf1_013/Scarf1_014/Scarf1_015/Scarf1_016/Scarf1_017/Scarf1_018/Scarf1_019/Scarf1_020/Scarf1_021/Scarf1_022
+        weight: 1
+      - path: Armature/Back/Head/Scarf1/Scarf1_001/Scarf1_002/Scarf1_003/Scarf1_004/Scarf1_005/Scarf1_006/Scarf1_007/Scarf1_008/Scarf1_009/Scarf1_010/Scarf1_011/Scarf1_012/Scarf1_013/Scarf1_014/Scarf1_015/Scarf1_016/Scarf1_017/Scarf1_018/Scarf1_019/Scarf1_020/Scarf1_021/Scarf1_022/Scarf1_023
+        weight: 1
+      - path: Armature/Back/Head/Scarf1/Scarf1_001/Scarf1_002/Scarf1_003/Scarf1_004/Scarf1_005/Scarf1_006/Scarf1_007/Scarf1_008/Scarf1_009/Scarf1_010/Scarf1_011/Scarf1_012/Scarf1_013/Scarf1_014/Scarf1_015/Scarf1_016/Scarf1_017/Scarf1_018/Scarf1_019/Scarf1_020/Scarf1_021/Scarf1_022/Scarf1_023/Scarf1_024
+        weight: 1
+      - path: Armature/Back/Head/Scarf1/Scarf1_001/Scarf1_002/Scarf1_003/Scarf1_004/Scarf1_005/Scarf1_006/Scarf1_007/Scarf1_008/Scarf1_009/Scarf1_010/Scarf1_011/Scarf1_012/Scarf1_013/Scarf1_014/Scarf1_015/Scarf1_016/Scarf1_017/Scarf1_018/Scarf1_019/Scarf1_020/Scarf1_021/Scarf1_022/Scarf1_023/Scarf1_024/Scarf1_025
+        weight: 1
+      - path: Armature/Back/Shoulder_L
+        weight: 1
+      - path: Armature/Back/Shoulder_L/Arm1_L
+        weight: 1
+      - path: Armature/Back/Shoulder_L/Arm1_L/Arm2_L
+        weight: 1
+      - path: Armature/Back/Shoulder_L/Arm1_L/Arm2_L/Hand_L
+        weight: 1
+      - path: Armature/Back/Shoulder_R
+        weight: 1
+      - path: Armature/Back/Shoulder_R/Arm1_R
+        weight: 1
+      - path: Armature/Back/Shoulder_R/Arm1_R/Arm2_R
+        weight: 1
+      - path: Armature/Back/Shoulder_R/Arm1_R/Arm2_R/Hand_R
+        weight: 1
+      - path: Armature/Back/Waist
+        weight: 1
+      - path: Armature/Back/Waist/Hip_L
+        weight: 1
+      - path: Armature/Back/Waist/Hip_L/Leg1_L
+        weight: 1
+      - path: Armature/Back/Waist/Hip_L/Leg1_L/Leg2_L
+        weight: 1
+      - path: Armature/Back/Waist/Hip_L/Leg1_L/Leg2_L/Foot_L
+        weight: 1
+      - path: Armature/Back/Waist/Hip_R
+        weight: 1
+      - path: Armature/Back/Waist/Hip_R/Leg1_R
+        weight: 1
+      - path: Armature/Back/Waist/Hip_R/Leg1_R/Leg2_R
+        weight: 1
+      - path: Armature/Back/Waist/Hip_R/Leg1_R/Leg2_R/Foot_R
+        weight: 1
+      - path: NinjaMesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .189999998
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

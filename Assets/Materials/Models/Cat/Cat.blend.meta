@@ -1,0 +1,150 @@
+fileFormatVersion: 2
+guid: ea4abd765aa3cc64e89728f12e8af586
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Armature
+    100002: BackBone
+    100004: BackHip_L
+    100006: BackHip_R
+    100008: BackLeg_L
+    100010: BackLeg_R
+    100012: Body
+    100014: //RootNode
+    100016: FrontHip_L
+    100018: FrontHip_R
+    100020: FrontLeg_L
+    100022: FrontLeg_R
+    100024: Tail1
+    100026: Tail2
+    100028: Tail3
+    400000: Armature
+    400002: BackBone
+    400004: BackHip_L
+    400006: BackHip_R
+    400008: BackLeg_L
+    400010: BackLeg_R
+    400012: Body
+    400014: //RootNode
+    400016: FrontHip_L
+    400018: FrontHip_R
+    400020: FrontLeg_L
+    400022: FrontLeg_R
+    400024: Tail1
+    400026: Tail2
+    400028: Tail3
+    4300000: Body
+    7400000: Default Take
+    7400002: ArmatureAction
+    9500000: //RootNode
+    13700000: Body
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: ArmatureAction
+      takeName: ArmatureAction
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/BackBone
+        weight: 1
+      - path: Armature/BackBone/FrontHip_L
+        weight: 1
+      - path: Armature/BackBone/FrontHip_L/FrontLeg_L
+        weight: 1
+      - path: Armature/BackBone/FrontHip_R
+        weight: 1
+      - path: Armature/BackBone/FrontHip_R/FrontLeg_R
+        weight: 1
+      - path: Armature/BackHip_L
+        weight: 1
+      - path: Armature/BackHip_L/BackLeg_L
+        weight: 1
+      - path: Armature/BackHip_R
+        weight: 1
+      - path: Armature/BackHip_R/BackLeg_R
+        weight: 1
+      - path: Armature/Tail1
+        weight: 1
+      - path: Armature/Tail1/Tail2
+        weight: 1
+      - path: Armature/Tail1/Tail2/Tail3
+        weight: 1
+      - path: Body
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: BackBone
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

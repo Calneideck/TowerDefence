@@ -142,13 +142,15 @@ public class Unit : MonoBehaviour
         {
             this.path = path;
             nodeIndex = 0;
-            for (int i = 0; i < path.Length; i++)
-                if ((path[i] - transform.position).sqrMagnitude < Grid.nodeRadiusSquared)
+            float closestDist = (path[0] - transform.position).sqrMagnitude;
+            for (int i = 1; i < path.Length; i++)
+                if ((path[i] - transform.position).sqrMagnitude < closestDist)
                 {
-                    nodeIndex = i + 1;
-                    break;
+                    closestDist = (path[i] - transform.position).sqrMagnitude;
+                    nodeIndex = i;
                 }
 
+            nodeIndex++;
             currentNode = path[nodeIndex];
             currentNode.y = height[modelID];
         }

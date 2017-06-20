@@ -97,7 +97,6 @@ public class HUD : MonoBehaviour
 
     }
 
-
     public void UpdateGold()
     {
         goldText.text = Player.Gold.ToString("n0");
@@ -107,6 +106,14 @@ public class HUD : MonoBehaviour
     {
         SellToolTip.SetActive(true);
         SellAmountLabel.text = string.Format("{0:n0}", Mathf.Ceil(0.75f * Info.towers[selectedTowerID].cost));
+    }
+
+    public void Victory()
+    {
+        gameOverText.gameObject.SetActive(true);
+        gameOverText.text = "Congratulations!" + System.Environment.NewLine +
+            "You completed the game." + System.Environment.NewLine +
+            "Thanks for playing!";
     }
 
     public void LifeLost()

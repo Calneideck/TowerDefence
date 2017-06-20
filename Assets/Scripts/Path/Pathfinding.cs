@@ -8,12 +8,12 @@ using System.Threading;
 
 public class Pathfinding : MonoBehaviour
 {
-    //private const int NUMBER_OF_THREADS = 5;
+    private const int NUMBER_OF_THREADS = 4;
     private Grid grid;
     private Queue<PathInfo> pathsFound = new Queue<PathInfo>();
     private Queue<PathRequest> pathRequests = new Queue<PathRequest>();
-    private Thread pathThread;
-    //private Thread[] threads = new Thread[NUMBER_OF_THREADS];
+    //private Thread pathThread;
+    private Thread[] threads = new Thread[NUMBER_OF_THREADS];
     private readonly object requestLock = new object();
     private readonly object foundLock = new object();
 
@@ -23,11 +23,13 @@ public class Pathfinding : MonoBehaviour
     {
         public GameObject target;
         public Vector3 startPos;
+        public int threadId;
 
-        public PathRequest(GameObject target, Vector3 startPos)
+        public PathRequest(GameObject target, Vector3 startPos, int threadId)
         {
             this.target = target;
             this.startPos = startPos;
+            this.threadId = threadId;
         }
     }
 
@@ -63,16 +65,21 @@ public class Pathfinding : MonoBehaviour
 
     public void RequestPath(GameObject target)
     {
-        if (pathThread == null || !pathThread.IsAlive)
-        {
-            pathThread = new Thread(new ParameterizedThreadStart(HandleFindPath));
-            pathThread.IsBackground = true;
-            pathThread.Start(new PathRequest(target, target.transform.position));
-        }
-        else
+        bool started = false;
+        for (int i = 0; i < NUMBER_OF_THREADS; i++)
+            if (threads[i] == null || !threads[i].IsAlive)
+            {
+                threads[i] = new Thread(new ParameterizedThreadStart(HandleFindPath));
+                threads[i].IsBackground = true;
+                threads[i].Start(new PathRequest(target, target.transform.position, i));
+                started = true;
+                break;
+            }
+
+        if (!started)
             lock (requestLock)
             {
-                pathRequests.Enqueue(new PathRequest(target, target.transform.position));
+                pathRequests.Enqueue(new PathRequest(target, target.transform.position, -1));
             }
     }
 
@@ -93,10 +100,12 @@ public class Pathfinding : MonoBehaviour
         {
             if (pathRequests.Count > 0)
             {
+                int id = pathRequest.threadId;
                 pathRequest = pathRequests.Dequeue();
-                pathThread = new Thread(new ParameterizedThreadStart(HandleFindPath));
-                pathThread.IsBackground = true;
-                pathThread.Start(pathRequest);
+                pathRequest.threadId = id;
+                threads[id] = new Thread(new ParameterizedThreadStart(HandleFindPath));
+                threads[id].IsBackground = true;
+                threads[id].Start(pathRequest);
             }
         }
     }
@@ -137,7 +146,6 @@ public class Pathfinding : MonoBehaviour
             }
         }
 
-        Debug.LogError("Path not found");
         return new Vector3[0];
     }
 

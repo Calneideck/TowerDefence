@@ -10,7 +10,8 @@ public class UnitManager : MonoBehaviour
     private List<Unit> units = new List<Unit>();
     private GameObject[] unitsToMove = new GameObject[UNIT_AMOUNT * 2];
     private int moveNumber = 0;
-    private bool useMultiThreading;
+    private RoundManager roundManager;
+    private float[] height = { 0.41f, 0, 0, 0, 0.5f, 0, 0 };
 
     public GameObject[] unitPrefabs;
     public string[] unitNames;
@@ -23,6 +24,7 @@ public class UnitManager : MonoBehaviour
     
     void Start()
 	{
+        roundManager = GetComponent<RoundManager>();
         leftPath = pathfinding.FindPath(leftSpawn.position);
         rightPath = pathfinding.FindPath(rightSpawn.position);
 	}
@@ -42,8 +44,8 @@ public class UnitManager : MonoBehaviour
         for (int i = 0; i < (roundNumber == 24 ? 1 : UNIT_AMOUNT); i++)
         {
             // Spawn units
-            Vector3 leftPos = leftSpawn.position + new Vector3(i % 5 * -unitSpawnSpacing, 0, Mathf.Floor(i / 5f) * unitSpawnSpacing);
-            Vector3 rightPos = rightSpawn.position + new Vector3(i % 5 * unitSpawnSpacing, 0, Mathf.Floor(i / 5f) * unitSpawnSpacing);
+            Vector3 leftPos = leftSpawn.position + new Vector3(i % 5 * -unitSpawnSpacing, height[modelID], Mathf.Floor(i / 5f) * unitSpawnSpacing);
+            Vector3 rightPos = rightSpawn.position + new Vector3(i % 5 * unitSpawnSpacing, height[modelID], Mathf.Floor(i / 5f) * unitSpawnSpacing);
             GameObject leftUnit = (GameObject)GameObject.Instantiate(unitPrefabs[modelID], leftPos, unitPrefabs[modelID].transform.rotation);
             GameObject rightUnit = (GameObject)GameObject.Instantiate(unitPrefabs[modelID], rightPos, unitPrefabs[modelID].transform.rotation);
 
@@ -143,23 +145,13 @@ public class UnitManager : MonoBehaviour
     public void RemoveUnit(Unit unit)
     {
         units.Remove(unit);
+        if (units.Count == 0 && roundManager.Round == 25)
+            GetComponent<HUD>().Victory();
     }
 
     public void GetPath(Unit unit)
     {
-        if (useMultiThreading)
-            pathfinding.RequestPath(unit.gameObject);
-        else
-            unit.GetComponent<Unit>().PathReceived(pathfinding.FindPath(unit.transform.position));
-    }
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            useMultiThreading = !useMultiThreading;
-            EventText.instance.AddWhiteText("Multithreading: " + (useMultiThreading ? "ON" : "OFF"));
-        }
+        pathfinding.RequestPath(unit.gameObject);
     }
 
     public void GameOver()
